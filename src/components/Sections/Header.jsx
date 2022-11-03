@@ -7,6 +7,7 @@ import HeaderImage from "../../assets/img/header-img.png";
 import Collab from "../../assets/img/collab.jpg";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -15,11 +16,18 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">Partenariats & Collaborations.</h1>
           <HeaderP className="font13 semiBold">
-            Salut tout le monde, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Chez <span className="extraBold">GC-Collaborative</span>, la relation avec le client est une des 
+          <span className="extraBold"> qualités qui nous différencient</span> de nos concurrents.
+          En tant que client GC-Collaborative, vous aurez une
+          <span className="extraBold"> équipe dédiée</span> qui travaillera avec vous
+           et connaîtra tous <span className="extraBold">les besoins</span> de votre organisation. Notre équipe fera en sorte que chaque aspect du projet 
+           soit pleinement pris en compte et elle vous offrira des conseils et des recommandations basées sur
+           <span className="extraBold"> les connaissances et l’expertise</span>.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <Link to="contact" spy={true} smooth={true} offset={-80}>
+              <FullButton title="Contactez-nous" />
+            </Link>
           </BtnWrapper>
         </div>
       </LeftSide>
@@ -32,9 +40,9 @@ export default function Header() {
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le résultat du travail d’un seul homme. C’est le travail de toute une équipe.</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Steve Jobs</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
