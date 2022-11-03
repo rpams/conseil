@@ -8,20 +8,26 @@ import Blog from "../components/Sections/Blog";
 import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer"
+import styled from "styled-components";
 
 export default function Landing() {
   return (
     <>
-      <TopNavbar />
-      <Header />
-      <Services />
-      {/* <Projects /> */}
-      {/* <Blog /> */}
-      {/* <Pricing /> */}
-      <Contact />
-      <Footer />
+      <Wrapper>
+        <TopNavbar />
+        <Header />
+        <Services />
+        {/* <Projects /> */}
+        {/* <Blog /> */}
+        {/* <Pricing /> */}
+        <Contact />
+        <Footer />
+      </Wrapper>
     </>
   );
 }
 
+const Wrapper = styled.nav`
+  width: "fit-content"
+`;
 

@@ -8,9 +8,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <>
+  <div style={{ width:"100%"}}>
     <App />
-  </>,
+  </div>,
   document.getElementById('root')
 );
 
