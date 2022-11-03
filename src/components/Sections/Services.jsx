@@ -10,6 +10,9 @@ import AddImage2 from "../../assets/img/add/2.png";
 import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
 import transport1 from "../../assets/img/transport1.jpg";
+import cooperative from "../../assets/img/cooperative.jpeg";
+import shipping from "../../assets/img/shipping.webp";
+import get from "../../assets/img/get.webp";
 import { Link } from "react-scroll";
 
 import text from "./DText";
@@ -81,13 +84,10 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                <h4 className="font15 semiBold">Un démarrage facile et efficace.</h4>
+                <h2 className="font40 extraBold">Expertise & conseils</h2>
+                <p className="font15">
+                Notre équipe expérimentée vous garantit une implémentation rapide et harmonieuse.
                 </p>
                 <ButtonsRow
                   className="flexNullCenter"
@@ -114,15 +114,15 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={cooperative} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={shipping} alt="office" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={get} alt="office" />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
                       <img src={transport1} alt="office" />

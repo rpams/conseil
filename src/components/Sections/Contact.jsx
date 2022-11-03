@@ -5,6 +5,8 @@ import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
 import AddImage1 from "../../assets/img/add/1.png";
+import get from "../../assets/img/get.webp";
+
 
 
 export default function Contact() {
@@ -24,12 +26,12 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
                 <label className="font13">Nom(s) & Prénom(s):</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <input type="text" id="fname" name="fname" className="font18 Bold" required="true"/>
                 <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
+                <input type="text" id="email" name="email" className="font18 Bold" />
                 <label className="font13">Sujet:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <input type="text" id="subject" name="subject" className="font18 Bold" />
+                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font18 semiBold" />
               </Form>
               <SumbitWrapper className="flex">
                 <ButtonInput type="submit" value="Envoyer le message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
@@ -40,9 +42,9 @@ export default function Contact() {
                 <ContactImgBox>
                   <img src={ContactImg1} alt="office" className="radius6" />
                 </ContactImgBox>
-                <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
-                </ContactImgBox>
+                <AddImgWrapp3>
+                  <img src={get} alt="office" className="radius6" />
+                </AddImgWrapp3>
               </div>
               {/* <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}> */}
@@ -57,6 +59,19 @@ export default function Contact() {
   );
 }
 
+
+const AddImgWrapp3 = styled.div`
+  width: 90%;
+  margin: 0 6% 10px 6%;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+`;
 const Wrapper = styled.section`
   width: 100%;
 `;

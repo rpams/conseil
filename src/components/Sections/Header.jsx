@@ -15,7 +15,7 @@ export default function Header() {
       <LeftSide className="flexCenter">
         <div>
         <SWrapper>
-          <h1 className="extraBold font60">Partenariats & Collaborations</h1>
+          <h1 className="extraBold font60">Partenariat & Collaboration</h1>
           <HeaderP className="font13 semiBold">
           Chez <span className="extraBold">GC-Collaborative</span>, la relation avec le client est une des 
           <span className="extraBold"> qualités qui nous différencient</span> de nos concurrents.
