@@ -13,7 +13,7 @@ import styled from "styled-components";
 export default function Landing() {
   return (
     <>
-      <Wrapper>
+
         <TopNavbar />
         <Header />
         <Services />
@@ -22,12 +22,9 @@ export default function Landing() {
         {/* <Pricing /> */}
         <Contact />
         <Footer />
-      </Wrapper>
+
     </>
   );
 }
 
-const Wrapper = styled.nav`
-  width: "fit-content"
-`;
 

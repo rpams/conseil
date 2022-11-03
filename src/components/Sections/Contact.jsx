@@ -33,8 +33,8 @@ export default function Contact() {
                 <ButtonInput type="submit" value="Envoyer le message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
               </SumbitWrapper>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
+            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 flex">
+              <div style={{ width: "50%", marginLeft: "120px" }} className="flexNullCenter flexColumn">
                 <ContactImgBox>
                   <img src={ContactImg1} alt="office" className="radius6" />
                 </ContactImgBox>
@@ -42,11 +42,11 @@ export default function Contact() {
                   <img src={ContactImg2} alt="office" className="radius6" />
                 </ContactImgBox>
               </div>
-              <div style={{ width: "50%" }}>
-                <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
-                </div>
-              </div>
+              {/* <div style={{ width: "50%" }}>
+                <div style={{ marginTop: "100px" }}> */}
+                  {/* <img src={ContactImg3} alt="office" className="radius6" /> */}
+                {/* </div>
+              </div> */}
             </div>
           </div>
         </div>
