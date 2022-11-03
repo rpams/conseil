@@ -223,6 +223,9 @@ const AddImgWrapp1 = styled.div`
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 860px) {
+    width: 100%;
+  }
 `;
 const AddImgWrapp2 = styled.div`
   width: 30%;
@@ -234,6 +237,9 @@ const AddImgWrapp2 = styled.div`
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 860px) {
+    width: 100%;
   }
 `;
 const AddImgWrapp3 = styled.div`
@@ -247,6 +253,9 @@ const AddImgWrapp3 = styled.div`
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 860px) {
+    width: 100%;
+  }
 `;
 const AddImgWrapp4 = styled.div`
   width: 30%;
@@ -258,5 +267,8 @@ const AddImgWrapp4 = styled.div`
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 860px) {
+    width: 100%;
   }
 `;
