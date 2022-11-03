@@ -1,7 +1,8 @@
 const text = {
   negoce:
     "Vous êtes une société étatique assiégé en Afrique et vous souhaitez achetez des produits et des marchandises en Europe ou dans le reste du monde. Genie-Collaboration met à votre disposition une équipe dynamique qui se charge de vous trouver les articles désirés, négocie les prie, conclut la transaction et vous ait livrer l'artile à l'adresse devotre choix. Vous êtes une entreprise en Afrique ou en Europe, vous travaillez dans l'agroalimentaire et souhaitez trouver des preneurs à ovs produits. L'équipe de Genie-Collaboration se charge de vous trouver des partenaires commerciaux et sert d'intermédiaire entre les deux parties jusqu'à la conslusion du marché. Vous êtes une société étatique ou une organisation assiégé en Afrique et vous souhaitez lier un partenariat avec d'autres structures commerciales dans le reste du monde. L'équie de Genie-Collaboration se charge d'étudier d'une rigueur tous les points obscurs du contrat afin de conclure un partenariat gagnant-gagnant et fiable pour les deux parties.",
-
+   expedition: "Genie-Collaboration propose dse services de sous-taitance et de négoce. En cas de conslusion de grands marchés intternationaux, elle se chargera d'acheminer les marchandises aux destinations souhaitées. Ce sevice est aussi mis à disposition de tou les collaborateurs de Géni-Collaboration.",
+   conseil: "Vous êtes nouvellement arrivé en Allemagne et vous ne savez pas par où commencer. Génie6Collaboration est ravie de vous recevoir dans ses locaux et d'en discuter avec vous des chances et opportunités qui s'offrent à vous. Elle se charge de vous prodiguer des conseils d'orientation sur le marché du travail et d'activités selon vos acquis et compétences. Génie-Collaborative met également à votre disposition pour des séances d'interrogatoire et autre ses services de traduteur dans les lagues suivantes: Allemand, Français, Yoruba, Fon et Goun."
 
 };
 

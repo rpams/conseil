@@ -10,6 +10,8 @@ import AddImage2 from "../../assets/img/add/2.png";
 import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
 import transport1 from "../../assets/img/transport1.jpg";
+import { Link } from "react-scroll";
+
 import text from "./DText";
 
 const transport =
@@ -21,10 +23,10 @@ export default function Services() {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">
-              Constriure des partenariats solides dès le départ.
+              Constriure des partenariats solides dès le départ
             </h1>
             <p className="font14">
-              Un démarage efficace grâce à des spécialistes à votre service
+              Un démarage efficace grâce à des spécialistes à votre service.
               <br />
               Tout au long de votre projet, notre équipe chargée de l’implémentation et du service se tiendra à vos côtés.
             </p>
@@ -52,23 +54,27 @@ export default function Services() {
               <ServiceBox
                 icon="browser"
                 title="GC-Expédition"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                subtitle={<>
+                  {text.expedition.slice(0, 144)+"..."}<a style={{cursor:"pointer",fontWeight:700}}>Voir plus</a>
+                  </>}
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
                 title="GC-Conseil & Divers services"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                subtitle={<>
+                  {text.conseil.slice(0, 144)+"..."}<a style={{cursor:"pointer",fontWeight:700}}>Voir plus</a>
+                  </>}
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            {/* <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
                 title="GC-Marketplace"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
               />
-            </ServiceBoxWrapper>
+            </ServiceBoxWrapper> */}
           </ServiceBoxRow>
         </div>
         <div className="lightBg">
@@ -88,17 +94,19 @@ export default function Services() {
                   style={{ margin: "30px 0" }}
                 >
                   <div style={{ width: "190px" }}>
+                  <Link to="services">
                     <FullButton
-                      title="Get Started"
-                      action={() => alert("clicked")}
+                      title="Nos services"
                     />
+                    </Link>
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
+                  <Link to="contact">
                     <FullButton
-                      title="Contact Us"
-                      action={() => alert("clicked")}
+                      title="Contactez-nous"
                       border
                     />
+                  </Link>
                   </div>
                 </ButtonsRow>
               </AddLeft>

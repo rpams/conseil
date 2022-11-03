@@ -14,7 +14,8 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Partenariats & Collaborations.</h1>
+        <SWrapper>
+          <h1 className="extraBold font60">Partenariats & Collaborations</h1>
           <HeaderP className="font13 semiBold">
           Chez <span className="extraBold">GC-Collaborative</span>, la relation avec le client est une des 
           <span className="extraBold"> qualités qui nous différencient</span> de nos concurrents.
@@ -24,6 +25,7 @@ export default function Header() {
            soit pleinement pris en compte et elle vous offrira des conseils et des recommandations basées sur
            <span className="extraBold"> les connaissances et l’expertise</span>.
           </HeaderP>
+        </SWrapper>
           <BtnWrapper>
             <Link to="contact" spy={true} smooth={true} offset={-80}>
               <FullButton title="Contactez-nous" />
@@ -64,6 +66,13 @@ const Wrapper = styled.section`
     flex-direction: column;
   }
 `;
+
+const SWrapper = styled.div`
+  @media (max-width: 960px) {
+    marginLeft: 20px
+  }
+`;
+
 const LeftSide = styled.div`
   width: 50%;
   height: 100%;
